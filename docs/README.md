@@ -1,7 +1,7 @@
 <!-- Project Logo -->
 <p id='tsconfig' align="center" style="text-align: center; margin:0px">
     <a href="">
-        <img src='docs/_media/banner-nuetral.svg' style="height: 125px"> 
+        <img src='_media/banner-nuetral.svg' style="height: 125px"> 
     </a>
 </p>
 
@@ -53,7 +53,7 @@ List of references...
 
 <div align="center">
     <a href="https://bithomp.com/explorer/rp1kWYztSkPZ2ULBUMCdhUDzDFhR891hcd">
-        <img src='docs/_media/xrpl-github-button.svg' style="width: 200px" width="200"> 
+        <img src='_media/xrpl-github-button.svg' style="width: 200px" width="200"> 
     </a>
 
 rp1kWYztSkPZ2ULBUMCdhUDzDFhR891hcd
@@ -62,7 +62,7 @@ rp1kWYztSkPZ2ULBUMCdhUDzDFhR891hcd
 
 <div align="center">
     <a href="https://xumm.app/detect/request:rp1kWYztSkPZ2ULBUMCdhUDzDFhR891hcd">
-        <img src='docs/_media/xumm-github-button.svg' style="width: 200px" width="200"> 
+        <img src='_media/xumm-github-button.svg' style="width: 200px" width="200"> 
     </a>
 
 https://xumm.app/detect/request:rp1kWYztSkPZ2ULBUMCdhUDzDFhR891hcd

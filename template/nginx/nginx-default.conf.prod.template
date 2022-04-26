@@ -1,0 +1,27 @@
+upstream api {
+  server api:${API_PORT};
+}
+
+upstream mongo {
+  server mongo:${DB_PORT};
+}
+
+server {
+  listen ${NGINX_PORT};
+
+  location / {
+      root   /usr/share/nginx/html;
+      index  index.html index.htm;
+      try_files $uri $uri/ /index.html =404;
+  }
+  
+  location /api {
+      rewrite /api/(.*) /$1 break;
+      proxy_pass http://api;
+  }
+
+  location /mongo {
+      rewrite /mongo/(.*) /$1 break;
+      proxy_pass http://mongo;
+  }
+}

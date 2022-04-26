@@ -1,0 +1,45 @@
+{
+  "name": "checkbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Running test\" && cd client/ && npm run start & npm run start",
+    "start": "node server.js",
+    "build": "cd client/ && npm install && npm run build",
+    "minify": "gulp scripts && gulp dependents && gulp plugins",
+    "dev-build": "cd client/ && npm run build",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whirledlabs/checkbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whirledlabs/checkbook/issues"
+  },
+  "homepage": "https://github.com/whirledlabs/checkbook#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "form-data": "^4.0.0",
+    "formidable": "^2.0.1",
+    "fs": "0.0.1-security",
+    "helmet": "^5.0.2",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongo-express": "^1.0.0-alpha.4",
+    "mongodb": "^4.3.1",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "xrpl": "^2.1.1",
+    "xumm-sdk": "^1.0.3"
+  }
+}
