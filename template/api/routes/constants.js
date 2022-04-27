@@ -6,6 +6,9 @@ const origins = [
             'https://checkbook-whirled-app.herokuapp.com/',
             `http://localhost:${process.env.API_PORT}`,
             `http://localhost:3020`,
+            `http://localhost/client`,
+            `http://localhost:3070`,
+            `http://localhost`,
             '*','https://apps.xumm.dev', 
             'https://xapp.loca.lt', 
             'https://xumm.app/detect/xapp:whirled.port', 
@@ -19,19 +22,15 @@ const routes = [
   '/db/users/query',
   '/db/users/all',
   '/db/users/delete',
-  '/db/posts/delete',
-  '/db/posts/deleteAll',
-  '/db/posts/query/all',
+  '/db/users/auth',
+  '/db/users/authAdd',
+  '/db/users/authChange',
   '/db/users/query/:key',
-  '/xumm/meta/:uuid',
-  '/ipfs/meta/add',
-  '/db/posts/update',
-  '/db/posts/add',
-  '/db/posts/query/:tokenID',
-  '/db/posts/remove',
   '/db/users/remove',
   '/db/users/update',
   '/db/users/add',
+  '/db/currencies/:currency',
+  '/xumm/meta/:uuid',
   '/xumm/init/:uuid',
   '/send',
   '/groupsend',
@@ -45,6 +44,7 @@ const routes = [
   '/payload/:payload_uuid',
   '/event',
   '/push',
-  '/xumm/init']
+  '/xumm/init'
+]
 
   module.exports = { routes, origins }
