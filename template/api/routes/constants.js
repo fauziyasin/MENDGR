@@ -6,9 +6,7 @@ const origins = [
           ]
 
 const routes = [
-  '/db/users/query',
-  '/db/users/add', 
-  '/db/users/query/:username'
+  '/db/col/query',
 ]
 
   module.exports = { routes, origins }

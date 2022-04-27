@@ -2,7 +2,8 @@ const mongo = require('../../scripts/mongo.js');
   
 const query = async (req, res) => {
     try {
-        let record = await mongo.findAll('col')
+
+        let record = await mongo.query('col', {"usr":"username"})
   
         if (record[0]) {
           res.send({data: record,

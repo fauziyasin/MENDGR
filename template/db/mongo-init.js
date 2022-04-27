@@ -5,11 +5,19 @@
 
 // Creating a new database matching the name within the .env 
 db = db.getSiblingDB('myDB');
-db.createCollection('sample_collection');
+db.createCollection('col');
 
+db.col.insert(
+  {
+    usr: 'username',
+    pwd: 'not-so-secret-password',
+    desc: 'Hello, this is the sample user data for testing. Think about creating a separate collection for password encryption.',
+    img: 'selfie.png',
+  }
+);
 
 // Creating a new user corresponding to the .env credentials
 db.createUser({
-  user: "user",
-  pwd: "password",
+  user: "username",
+  pwd: "strong_password",
   roles : [ {role: 'readWrite',db: 'myDB'}]})  

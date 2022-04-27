@@ -45,7 +45,7 @@ const query = async (col, query) => {
         const collection = client.db(process.env.DB_NAME).collection(col);
 
         // ------ Find Data
-        const filterData = await collection.find({query}).toArray();
+        const filterData = await collection.find(query).toArray();
         return filterData
 }
 
