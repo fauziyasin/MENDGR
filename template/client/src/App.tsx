@@ -1,8 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/images/svg/logo.svg';
+import './App.scss';
 
-function App() {
+import database from './scripts/database';
+
+const App = () => {
+
+  const handleClick = async () => {
+    let response = await database.query('col')
+    console.log(response)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +26,11 @@ function App() {
         >
           Learn React
         </a>
+        <button 
+        onClick={handleClick}
+        >
+          Click to test DB
+        </button>
       </header>
     </div>
   );

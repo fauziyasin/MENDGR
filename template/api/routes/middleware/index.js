@@ -23,4 +23,7 @@ const reqApiKeyMatch = (req, res, next) => {
         error: true
     })
   }
-  
+
+module.exports = {
+    reqApiKeyMatch
+}
