@@ -6,7 +6,7 @@
 </p>
 
 <!-- Project Title -->
-<p align="center" style="text-align: center; margin:0px">mongo-express-rect-nginx-docker stack</p>
+<p align="center" style="text-align: center; margin:0px">mongo-express-react-nginx-docker stack</p>
 
 <!-- Project Shields -->
 <p align="center" style="text-align: center;">
